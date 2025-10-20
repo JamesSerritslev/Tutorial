@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-// Recursive function to calculate factorial
+//Testing git hub
+
+// Testing merge conflict
 // Example: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120
 int factorial(int n) {
     // Base case: factorial of 0 or 1 is 1
@@ -53,4 +55,54 @@ int main() {
 
     cout << "=== Recursive Functions Demo ===" << endl;
     cout << "1. Factorial" << endl;
-    cout << "2. Fibonacci" << e
+    cout << "2. Fibonacci" << endl;
+    cout << "3. Sum of Digits" << endl;
+    cout << "4. Reverse Number" << endl;
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    switch (choice) {
+    case 1:
+        if (num < 0) {
+            cout << "Factorial is not defined for negative numbers!" << endl;
+        }
+        else {
+            cout << "Factorial of " << num << " = " << factorial(num) << endl;
+        }
+        break;
+
+    case 2:
+        if (num < 0) {
+            cout << "Fibonacci is not defined for negative numbers!" << endl;
+        }
+        else {
+            cout << "Fibonacci number at position " << num << " = " << fibonacci(num) << endl;
+        }
+        break;
+
+    case 3:
+        if (num < 0) {
+            num = -num; // Make positive for digit sum
+        }
+        cout << "Sum of digits of " << num << " = " << sumDigits(num) << endl;
+        break;
+
+    case 4:
+        if (num < 0) {
+            cout << "Reversed number: -" << reverseNumber(-num) << endl;
+        }
+        else {
+            cout << "Reversed number: " << reverseNumber(num) << endl;
+        }
+        break;
+
+    default:
+        cout << "Invalid choice!" << endl;
+    }
+
+    return 0;
+}
+```
