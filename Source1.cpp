@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Remote Change
+//Local Change
 
 // Testing merge conflict
 // Example: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120
