@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Local Change
+//Made a change to this branch
 
 // Testing merge conflict
 // Example: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120
@@ -54,7 +54,7 @@ int main() {
     int choice, num;
 
     cout << "=== Recursive Functions Demo ===" << endl;
-    cout << "1. Factorial" << endl;
+    cout << "1. factorialTest" << endl;
     cout << "2. Fibonacci" << endl;
     cout << "3. Sum of Digits" << endl;
     cout << "4. Reverse Number" << endl;
